@@ -1,3 +1,7 @@
 # dirs
 node_modules/
 .sass-cache/
+
+# test images
+bg2.jpg
+bg3.jpg
