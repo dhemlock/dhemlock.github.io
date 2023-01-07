@@ -3,6 +3,7 @@
     "sass": "^1.57.1"
   },
   "scripts": {
-    "watch-sass": "sass --watch ./assets/sass/main.scss ./assets/css/main.css"
+    "watch-sass": "sass --watch ./assets/sass/main.scss ./assets/css/main.css",
+    "build-css": "sass ./assets/sass/main.scss ./assets/css/main.css"
   }
 }
