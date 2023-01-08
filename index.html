@@ -15,6 +15,8 @@
 
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
 	</head>
 	<body class="is-preload">
 
@@ -35,8 +37,8 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="#one">About</a></li>
-								<li><a href="#footer">Contact Us</li>
+								<li><a href="#one" onclick="scrollToAnchor('one')">About</a></li>
+								<li><a href="#footer" onclick="scrollToAnchor('footer')">Contact Us</li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -192,6 +194,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+					<!-- TODO add this to js files -->
+			<script>
+				function scrollToAnchor(id) {
+					const anchor = document.querySelector(`#${id}`);
+					anchor.scrollIntoView({ behavior: 'smooth' });
+				}
+			</script>
 
 	</body>
 </html>
