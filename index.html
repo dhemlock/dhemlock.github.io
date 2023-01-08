@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<meta property="og:image" content="images/logo_transparent_cropped.svg"/>
+		<meta property="og:image" content="/images/logo_transparent_cropped.svg"/>
 
 
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -84,27 +84,90 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
 							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
+							
+							<form
+								action="https://formspree.io/f/mwkjkrye"
+								method="POST">
 								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+									<div class="field half">	
+									<label>
+										Name
+										<input type="text" placeholder="First Name">
+									</label>
 									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
+									
+									<div class="field half">
+									<label>
+										&nbsp
+										<input type="text" placeholder="Last Name">
+									</label>
 									</div>
+									
 									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
+									<label>
+										Email
+										<input type="email" name="email">
+									</label>
+									</div>
+									
+									<div class="field">
+									<label>
+											Phone Number
+											<input type="text" placeholder="### ### ####">
+									</label>
+									</div>
+									
+									<div class="field">
+									<label>
+										Law Firm (if Applicable)
+										<input type="text">
+									</label>
+									</div>
+
+									<div class="field">
+										<label for="litlist">
+											Litigation
+											<!-- <input list="litoptions" type="text"> -->
+											<select id="litoptions">
+												<option value="">-- Please select an option --</option>
+												<option value="Small Claims">Small Claims</option>
+												<option value="Family">Family</option>
+												<option value="Civil">Civil</option>
+												<option value="Criminal">Criminal</option>
+												<option value="Other">Other</option>
+											</select>
+										</label>									
+									</div>
+
+									<div class="field">	
+										<label>
+											Your Address
+											<input type="text" placeholder="Address, Town, Postal Code">
+										</label>
+									</div>			
+									
+									<div class="field">	
+										<label>
+											Address of Service
+											<input type="text" placeholder="Address, Town, Postal Code">
+										</label>
+									</div>		
+
+
+									<div class="field">
+									<label>
+										Memo:
+										<textarea name="message"></textarea>
+									</label>
 									</div>
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+
+								<!-- your other form fields go here -->
+								<button type="submit">Send</button>
+
 							</form>
+							
 							<ul class="contact">
 								<li class="icon solid fa-home">
 									Untitled Inc<br />
