@@ -25,7 +25,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
+						<h1><a href="index.html">Hemlock Process Servers</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -37,8 +37,8 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="#one" onclick="scrollToAnchor('one')">About</a></li>
-								<li><a href="#footer" onclick="scrollToAnchor('footer')">Contact Us</li>
+								<li><a href="#about" onclick="scrollToAnchor('one')">About</a></li>
+								<li><a href="#contact" onclick="scrollToAnchor('footer')">Contact</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -49,7 +49,7 @@
 						<div class="inner">
 							<div class="logo"><img src="images/logo_only_white.svg" alt=""/></div>
 							<h2>Hemlock Process Servers</h2>
-							<p>Serving &#8226 Something &#8226 Different Thing</p>
+							<p>Service &#8226 Integrity &#8226 Professionalism</p>
 						</div>
 					</section>
 
@@ -59,11 +59,15 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/document7.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Our Services</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<p>
+											Hemlock Process Servers was estabilished in <b>North Bay</b> to provide a direct source for serving documents in our community and the surrounding area. 
+											Run and staffed by retired members of the OPP, our team of process servers has a wealth of legal knowledge and we 
+											understand the importance of due diligence, proper note taking, and providing "court-proof services".
+										</p>
+										<a href="#contact" onclick="scrollToAnchor('footer')" class="special">Contact Us </a>
 									</div>
 								</div>
 							</section>
@@ -84,6 +88,7 @@
 
 				<!-- Footer -->
 					<section id="footer">
+
 						<div class="inner">
 							<form
 								action="https://formspree.io/f/mwkjkrye"
@@ -113,19 +118,26 @@
 									
 									<div class="field half">
 									<label>
-										Phone Number
-										<input type="text" placeholder="### ### ####">
+										Phone Number*
+										<input type="text" placeholder="### ### ####" required>
 									</label>
 									</div>
+
+									<div class="field">	
+									<label>
+										Your Address
+										<input type="text" placeholder="Address, Town, Postal Code">
+									</label>
+									</div>			
 									
-									<div class="field">
+									<div class="field half">
 									<label>
 										Law Firm (if Applicable)
 										<input type="text">
 									</label>
 									</div>
 
-									<div class="field">
+									<div class="field half">
 										<label for="litlist">
 											Litigation
 											<!-- <input list="litoptions" type="text"> -->
@@ -142,45 +154,52 @@
 
 									<div class="field">	
 										<label>
-											Your Address
-											<input type="text" placeholder="Address, Town, Postal Code">
-										</label>
-									</div>			
-									
-									<div class="field">	
-										<label>
 											Address of Service
 											<input type="text" placeholder="Address, Town, Postal Code">
 										</label>
 									</div>		
 
-
 									<div class="field">
 									<label>
-										Memo*
+										Memo
 										<textarea name="message" placeholder="Please provide a short description of what you are looking for"></textarea>
 									</label>
 									</div>
-								</div>
+							
+									<div class="field">
+										<label for="hear-about-us">How did you hear about us?
+										<select id="hear-about-us" name="hear-about-us">
+											<option value="search engine">Search Engine</option>
+											<option value="social media">Facebook</option>
+											<option value="advertising">Advertising</option>
+											<option value="other">Other</option>
+										</select>
+									</label>
+									</div>	
+									
+									<div id="other-input" name="other-input" class="field" style="display:none;">
+										<label>If you selected "Other", please specify
+										<textarea type="text"></textarea>
+										</label>
+									</div>
 
-								<!-- your other form fields go here -->
+								</div>								
 								<button type="submit">Send</button>
-
 							</form>
 							
 							<ul class="contact">
 								<h2>Contact Us</h2>
 								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
+									Hemlock Process Servers<br />
+									P.O. Box 38 #2894<br />
+									North Bay, Ontario, P1B 8G8
 								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="icon solid fa-phone">(705) 303-9966</li>
+								<li class="icon solid fa-envelope"><a href="#">reception@hemlockserving.ca</a></li>
+								<!-- <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li> -->
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Hemlock Process Servers. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Hemlock Process Servers. All rights reserved.</li>
 							</ul>
 						</div>
 					</section>
@@ -200,6 +219,17 @@
 					const anchor = document.querySelector(`#${id}`);
 					anchor.scrollIntoView({ behavior: 'smooth' });
 				}
+			</script>
+			<script>
+			var select = document.getElementById("hear-about-us");
+			var input = document.getElementById("other-input");
+			select.addEventListener("change", function(){
+				if(select.value === "other"){
+				input.style.display = "block";
+				}else{
+				input.style.display = "none";
+				}
+			});
 			</script>
 
 	</body>

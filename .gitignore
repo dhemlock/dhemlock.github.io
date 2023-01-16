@@ -1,6 +1,10 @@
 # dirs
 node_modules/
 .sass-cache/
+image-archive/
+
+# files
+notes.txt
 
 # test images
 bg2.jpg
