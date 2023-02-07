@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Hemlock Process Servers - North Bay Process Serving</title>
+		<title>Hemlock Process Servers - North Bay Servers</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta property="og:image" content="/images/logo_transparent_cropped.svg"/>
-		<meta name="description" content="Hemlock Process Servers is a North Bay based company dedicated to serving documents with integrity and professionalism">
+		<meta name="description" content="Hemlock Process Servers is a North Bay based company dedicated to serving documents with integrity and professionalism.">
 
 		<link rel="icon" type="image/x-icon" href="/images/favicon.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -49,6 +49,7 @@
 						<div class="inner">
 							<div class="logo"><img src="images/logo_only_white.svg" alt=""/></div>
 							<h2>Hemlock Process Servers</h2>
+							<h3>North Bay Servers</h3>
 							<p>Service &#8226 Integrity &#8226 Professionalism</p>
 						</div>
 					</section>
@@ -59,12 +60,12 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/document7.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/document7.webp" alt="" /></a>
 									<div class="content">
 										<h2 class="major">About Us</h2>
 										<p>
 											Hemlock Process Servers was estabilished in <b>North Bay</b> to provide a direct source for serving documents in our community and the surrounding area. 
-											Run and staffed by retired members of the OPP, our team of process servers has a wealth of legal knowledge and we 
+											Run and staffed by retired members of the OPP, our team of North Bay servers have a wealth of legal knowledge and we 
 											understand the importance of due diligence, proper note taking, and providing "court-proof services".
 										</p>
 										<a href="#contact" onclick="scrollToAnchor('footer')" class="special">Contact Us </a>
@@ -98,14 +99,14 @@
 									<div class="field half">	
 									<label>
 										Name*
-										<input type="text" placeholder="First Name" required>
+										<input type="text" name="firstName" placeholder="First Name" required>
 									</label>
 									</div>
 									
 									<div class="field half">
 									<label>
 										&nbsp
-										<input type="text" placeholder="Last Name" required>
+										<input type="text" name="lastName" placeholder="Last Name" required>
 									</label>
 									</div>
 									
@@ -119,21 +120,21 @@
 									<div class="field half">
 									<label>
 										Phone Number*
-										<input type="text" placeholder="### ### ####" required>
+										<input type="text" name="phone" placeholder="### ### ####" required>
 									</label>
 									</div>
 
 									<div class="field">	
 									<label>
 										Your Address
-										<input type="text" placeholder="Address, Town, Postal Code">
+										<input type="text" name="userAddress" placeholder="Address, Town, Postal Code">
 									</label>
 									</div>			
 									
 									<div class="field half">
 									<label>
 										Law Firm (if Applicable)
-										<input type="text">
+										<input name="lawFirm" type="text">
 									</label>
 									</div>
 
@@ -141,7 +142,7 @@
 										<label for="litlist">
 											Litigation
 											<!-- <input list="litoptions" type="text"> -->
-											<select id="litoptions">
+											<select id="litoptions" name="litigationType">
 												<option value="">-- Select --</option>
 												<option value="Small Claims">Small Claims</option>
 												<option value="Family">Family</option>
@@ -155,7 +156,7 @@
 									<div class="field">	
 										<label>
 											Address of Service
-											<input type="text" placeholder="Address, Town, Postal Code">
+											<input type="text" name="serviceAddress" placeholder="Address, Town, Postal Code">
 										</label>
 									</div>		
 
@@ -169,6 +170,7 @@
 									<div class="field">
 										<label for="hear-about-us">How did you hear about us?
 										<select id="hear-about-us" name="hear-about-us">
+											<option value="default">-- Select --</option>
 											<option value="search engine">Search Engine</option>
 											<option value="social media">Facebook</option>
 											<option value="advertising">Advertising</option>
@@ -181,7 +183,7 @@
 									
 									<div id="other-input" name="other-input" class="field" style="display:none;">
 										<label>If you selected "Other", please specify
-										<textarea type="text"></textarea>
+										<textarea name="otherDescription" type="text"></textarea>
 										</label>
 									</div>
 
